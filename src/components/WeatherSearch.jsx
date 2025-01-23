@@ -22,7 +22,11 @@ const WeatherSearch = () => {
         className="focus:outline-none focus:border-none flex-grow"
       />
       <button type="submit">
-        <img className="w-6" src="/assets/search.png" alt="Search" />
+        <img
+          className="w-6"
+          src="https://singhaniya0411.github.io/React-Weather-App/assets/search.png"
+          alt="Search"
+        />
       </button>
     </form>
   );

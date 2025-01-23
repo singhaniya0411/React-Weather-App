@@ -27,7 +27,7 @@ const Details = () => {
           <div>
             <img
               className="w-20 mix-blend-multiply"
-              src="/assets/wind.gif"
+              src="https://singhaniya0411.github.io/React-Weather-App/assets/wind.gif"
               alt=""
             />
           </div>
@@ -40,7 +40,7 @@ const Details = () => {
           <div>
             <img
               className="w-20 mix-blend-multiply"
-              src="/assets/humidity.gif"
+              src="https://singhaniya0411.github.io/React-Weather-App/assets/humidity.gif"
               alt=""
             />
           </div>
@@ -56,7 +56,7 @@ const Details = () => {
           <div>
             <img
               className="w-14 mix-blend-multiply"
-              src="/assets/pressure.gif"
+              src="https://singhaniya0411.github.io/React-Weather-App/assets/pressure.gif"
               alt=""
             />
           </div>
@@ -69,7 +69,7 @@ const Details = () => {
           <div>
             <img
               className="w-20 mix-blend-multiply relative left-1.5"
-              src="/assets/visibility.gif"
+              src="https://singhaniya0411.github.io/React-Weather-App/assets/visibility.gif"
               alt=""
             />
           </div>
@@ -84,7 +84,7 @@ const Details = () => {
           <div>
             <img
               className="w-12 mix-blend-multiply"
-              src="/assets/sunrise.gif"
+              src="https://singhaniya0411.github.io/React-Weather-App/assets/sunrise.gif"
               alt="sunrise"
             />
           </div>
