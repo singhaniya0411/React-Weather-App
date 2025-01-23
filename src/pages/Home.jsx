@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import WeatherSearch from "../components/WeatherSearch";
 import Details from "../components/Details";
-import { assets } from "../assets/assets";
+import { assets } from "../../public/assets/assets";
 import { AppContext } from "../context/AppContext";
 
 const Home = () => {

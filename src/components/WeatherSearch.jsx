@@ -22,7 +22,7 @@ const WeatherSearch = () => {
         className="focus:outline-none focus:border-none flex-grow"
       />
       <button type="submit">
-        <img className="w-6" src="src/assets/search.png" alt="Search" />
+        <img className="w-6" src="public/assets/search.png" alt="Search" />
       </button>
     </form>
   );

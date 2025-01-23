@@ -27,7 +27,7 @@ const Details = () => {
           <div>
             <img
               className="w-20 mix-blend-multiply"
-              src="src/assets/wind.gif"
+              src="public/assets/wind.gif"
               alt=""
             />
           </div>
@@ -40,7 +40,7 @@ const Details = () => {
           <div>
             <img
               className="w-20 mix-blend-multiply"
-              src="src/assets/humidity.gif"
+              src="public/assets/humidity.gif"
               alt=""
             />
           </div>
@@ -56,7 +56,7 @@ const Details = () => {
           <div>
             <img
               className="w-14 mix-blend-multiply"
-              src="src/assets/pressure.gif"
+              src="public/assets/pressure.gif"
               alt=""
             />
           </div>
@@ -69,7 +69,7 @@ const Details = () => {
           <div>
             <img
               className="w-20 mix-blend-multiply relative left-1.5"
-              src="src/assets/visibility.gif"
+              src="public/assets/visibility.gif"
               alt=""
             />
           </div>
@@ -84,7 +84,7 @@ const Details = () => {
           <div>
             <img
               className="w-12 mix-blend-multiply"
-              src="src/assets/sunrise.gif"
+              src="public/assets/sunrise.gif"
               alt="sunrise"
             />
           </div>
