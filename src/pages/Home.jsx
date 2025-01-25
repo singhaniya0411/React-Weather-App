@@ -6,7 +6,6 @@ import { AppContext } from "../context/AppContext";
 
 const Home = () => {
   const {
-    
     weather,
     sunsetTimestamps,
     current_Time,
