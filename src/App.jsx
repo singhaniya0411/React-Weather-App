@@ -1,9 +1,11 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import "./App.css";
 import Home from "./pages/Home";
 import { AppContext } from "./context/AppContext";
+
 function App() {
   const { darkMode, toggleDarkMode } = useContext(AppContext);
+
   return (
     <div
       className={`flex items-center justify-center h-auto ${
@@ -21,8 +23,8 @@ function App() {
         <label className="relative inline-flex items-center cursor-pointer">
           <input
             type="checkbox"
-            value={darkMode}
-            onChange={toggleDarkMode}
+            checked={darkMode}  // Binding the checkbox to darkMode state
+            onChange={toggleDarkMode}  // Toggling darkMode when the checkbox is clicked
             className="sr-only"
           />
           <div className="w-10 h-6 bg-gray-300 rounded-full transition-colors duration-1000"></div>
@@ -33,10 +35,8 @@ function App() {
           ></div>
         </label>
       </div>
+      
       <Home />
-      <div className="flex items-center justify-center h-screen bg-gradient-to-r from-sky-600 to-gray-100 font-sans">
-        <Home />
-      </div>
     </div>
   );
 }
