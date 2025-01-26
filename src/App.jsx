@@ -1,11 +1,15 @@
 import { useContext, useState } from "react";
 import "./App.css";
 import Home from "./pages/Home";
+<<<<<<< HEAD
 import { AppContext } from "./context/AppContext";
 
+=======
+>>>>>>> 35610049d7a725a19ba3ef627125df8b725d5d32
 function App() {
   const { darkMode, toggleDarkMode } = useContext(AppContext);
   return (
+<<<<<<< HEAD
     <div
       className={`flex items-center justify-center h-auto ${
         darkMode
@@ -35,6 +39,10 @@ function App() {
         </label>
       </div>
       <Home />
+=======
+    <div className="flex items-center justify-center h-screen bg-gradient-to-r from-sky-600 to-gray-100 font-sans">
+      <Home/>
+>>>>>>> 35610049d7a725a19ba3ef627125df8b725d5d32
     </div>
   );
 }
