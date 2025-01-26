@@ -11,6 +11,7 @@ const Home = () => {
     current_Time,
     timezone,
     sunriseTimestamps,
+    darkMode,
   } = useContext(AppContext);
 
   const weatherMap = {
@@ -45,16 +46,25 @@ const Home = () => {
   }
   const weatherImage = weatherMap[weather];
   return (
-    <div className="w-[420px] h-[680px] bg-white rounded-2xl border-blue-300 border ">
+    <div
+      className={`max-w-md mx-auto h-auto ${
+        darkMode
+          ? "bg-gradient-to-r from-gray-500 to-gray-300 border-gray-950"
+          : " bg-white border-blue-300 "
+      }  rounded-2xl border p-2 my-1 sm:h-[720px] md:max-w-lg lg:max-w-xl lg:h-auto`}
+    >
       <WeatherSearch />
       <div className="mt-8 flex justify-center">
         <div className="relative w-fit">
           <img className="w-32  mix-blend-multiply" src={weatherImage} />
         </div>
       </div>
-      <div className="justify-center flex font-semibold">{weather}</div>
-
-      <Details />
+      <div className="mt-4 text-center font-semibold text-lg sm:text-xl lg:text-2xl">
+        {weather}
+      </div>
+      <div className="py-4">
+        <Details />
+      </div>
     </div>
   );
 };

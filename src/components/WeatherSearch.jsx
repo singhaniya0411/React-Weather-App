@@ -12,7 +12,7 @@ const WeatherSearch = () => {
   return (
     <form
       onSubmit={onSubmit}
-      className="border-black border m-8 h-10 gap-1 p-2 justify-between flex bg-white rounded-lg"
+      className="border-black border mb-6 mt-5 ml-3 mr-3 h-10 gap-1 p-2 justify-between flex bg-white rounded-lg"
     >
       <input
         type="text"

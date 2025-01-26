@@ -23,6 +23,8 @@ const AppProvider = (props) => {
   const [latitude, setLatitude] = useState("");
   const [longitude, setLongitude] = useState("");
 
+  const [darkMode, setDarkMode] = useState(false);
+
   const handleSubmit = async (city) => {
     try {
       const response = await fetch(`${apiUrl}&q=${city}&appid=${apiKey}`);
@@ -109,6 +111,10 @@ const AppProvider = (props) => {
   //   // console.log(current_Time);
   // }, [sunrise, sunset, timezone]);
 
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   const value = {
     sunsetTimestamps,
     sunriseTimestamps,
@@ -124,7 +130,9 @@ const AppProvider = (props) => {
     current_Time,
     timezone,
     country,
+    darkMode,
     handleSubmit,
+    toggleDarkMode,
   };
 
   return (
