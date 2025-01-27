@@ -6,5 +6,6 @@ import rain from './rain.gif'
 import snow from './snow.gif'
 import sun from "./sun.gif"
 import storm from "./storm.gif"
+import weatherImg from "./weather-icon.jpg"
 
-export const assets = { clouds, drizzle, mist, moon, rain, snow, sun, storm }
+export const assets = { clouds, drizzle, mist, moon, rain, snow, sun, storm, weatherImg }
