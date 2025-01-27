@@ -24,7 +24,7 @@ function App() {
           />
           <div
             className={`w-14 h-6 ${
-              darkMode ? "bg-gray-300" : "bg-sky-300"
+              darkMode ? "bg-gray-300" : "bg-sky-200"
             }  rounded-full transition-colors duration-1000`}
           >
             <div
@@ -32,14 +32,14 @@ function App() {
                 darkMode ? "opacity-0" : "opacity-100"
               }`}
             >
-              <span className=" text-sm text-black text-[12px]">Light</span>
+              <span className=" text-sm text-black text-[10px]">Light</span>
             </div>
             <div
               className={`absolute inset-0 flex items-center justify-start pl-2 transition-opacity duration-1000 ${
                 darkMode ? "opacity-100" : "opacity-0"
               }`}
             >
-              <span className="text-sm text-black">Dark</span>
+              <span className="text-sm text-black text-[10px]">Dark</span>
             </div>
             <div
               className={`${
@@ -49,7 +49,6 @@ function App() {
           </div>
         </label>
       </div>
-
 
       <Home />
     </div>
