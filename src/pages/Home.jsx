@@ -54,7 +54,7 @@ const Home = () => {
           darkMode
             ? "bg-gradient-to-r from-gray-500 to-gray-200 border-black border"
             : "bg-white "
-        } pl-6 py-3 pr-6 rounded-md justify-between`}
+        } pl-6 py-3 pr-6 rounded-xl justify-between`}
       >
         <div
           className={`text-2xl   ${
