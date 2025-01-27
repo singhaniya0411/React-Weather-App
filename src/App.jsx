@@ -15,27 +15,42 @@ function App() {
       } font-sans px-4 transition-all duration-1000`}
     >
       <div className="absolute top-4 right-4 flex items-center gap-3">
-        <span
-          className={`text-sm ${darkMode ? "text-white" : "text-gray-700"}`}
-        >
-          {darkMode ? "Dark" : "Light"}
-        </span>
         <label className="relative inline-flex items-center cursor-pointer">
           <input
             type="checkbox"
-            checked={darkMode}  // Binding the checkbox to darkMode state
-            onChange={toggleDarkMode}  // Toggling darkMode when the checkbox is clicked
+            checked={darkMode} // Binding the checkbox to darkMode state
+            onChange={toggleDarkMode} // Toggling darkMode when the checkbox is clicked
             className="sr-only"
           />
-          <div className="w-10 h-6 bg-gray-300 rounded-full transition-colors duration-1000"></div>
           <div
-            className={`${
-              darkMode ? "translate-x-4" : "translate-x-0"
-            } absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow-md transition-transform duration-1000`}
-          ></div>
+            className={`w-14 h-6 ${
+              darkMode ? "bg-gray-300" : "bg-sky-300"
+            }  rounded-full transition-colors duration-1000`}
+          >
+            <div
+              className={`absolute  inset-0 flex items-center justify-end pr-2 transition-opacity duration-1000 ${
+                darkMode ? "opacity-0" : "opacity-100"
+              }`}
+            >
+              <span className=" text-sm text-black text-[12px]">Light</span>
+            </div>
+            <div
+              className={`absolute inset-0 flex items-center justify-start pl-2 transition-opacity duration-1000 ${
+                darkMode ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              <span className="text-sm text-black">Dark</span>
+            </div>
+            <div
+              className={`${
+                darkMode ? "translate-x-8" : "translate-x-0"
+              } absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow-md transition-transform duration-1000`}
+            ></div>
+          </div>
         </label>
       </div>
-      
+
+
       <Home />
     </div>
   );
