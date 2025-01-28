@@ -65,8 +65,6 @@ Follow these steps to get started:
 
 ---
 
----
-
 ## 🌟 Future Enhancements
 
 - 🔔 Add weather alerts for extreme conditions.
