@@ -13,6 +13,7 @@ const Home = () => {
     sunriseTimestamps,
     darkMode,
   } = useContext(AppContext);
+
   
   const weatherMap = {
     Clouds: assets.clouds,
