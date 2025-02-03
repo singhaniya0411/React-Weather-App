@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useState } from "react";
 export const AppContext = createContext();
 
+
 const AppProvider = (props) => {
   const apiKey = "958d9c65c6ee6313dab0ffecfee5286b";
   const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric";
