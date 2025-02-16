@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import { AppContext } from "./context/AppContext";
 
 function App() {
+  
   const { darkMode, toggleDarkMode } = useContext(AppContext);
 
   return (
