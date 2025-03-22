@@ -4,6 +4,7 @@
 
 ---
 
+
 ## 🚀 Features
 - 🌍 **Current Location Weather**: Fetches weather data based on the user's geolocation.
 - 🏙️ **Search by City**: Allows users to search for weather details in any city worldwide.
