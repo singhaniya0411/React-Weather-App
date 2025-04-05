@@ -1,6 +1,7 @@
 # 🌤️ WeatherApp
 **WeatherApp** is a React-based application that allows users to check the weather forecast for any city or their current location. It leverages APIs to fetch real-time weather data and provides an intuitive, user-friendly interface.
 
+
 ---
 ## 🚀 Features
 - 🌍 **Current Location Weather**: Fetches weather data based on the user's geolocation.
